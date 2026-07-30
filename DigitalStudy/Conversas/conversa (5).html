@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wireframe alt-perfil de outro usuario</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  background-color: rgb(51, 51, 51);
+  }
+
+  .phone {
+    width: 360px;
+    height: 640px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    background: red;
+  }
+
+  .topbar {
+   right: 50px;
+    background: #61d0f5;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 14px;
+   
+    
+  }
+
+
+  .chat {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: #e5ddd5;
+  }
+
+  .msg {
+    max-width: 70%;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  .msg.usuario {
+    background: #fff;
+    align-self: flex-start;
+  }
+
+  .msg.eu {
+    background: #b1b4ae;
+    align-self: flex-end;
+  }
+
+  .comp{
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding: 6px;
+    background: #f0f0f0;
+  }
+
+  .comp input {
+    flex: 1;
+    border: none;
+    border-radius: 16px;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .comp button {
+    margin-left: 6px;
+    background: #2367a2;
+    color: rgb(196, 209, 255);
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+   
+  }
+  .prof{
+    position: relative;
+    top: 40px;
+    border-radius: 50%;
+
+  }
+  
+   .navegacao{
+    position: absolute;
+   
+    width: 360px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.ts{
+  font-size: 8px;
+}
+</style>
+</head>
+<body>
+  <div class="phone">
+    <div class="navegacao">
+           <a href="../projetoIW/nn/WAchat.html"> <div class="selec"> <img src="../imagens/chat-removebg-preview.png" width="25px" > </div></a>
+         <a href="../inicio.html">  <div class="selec"> <img src="../imagens/home-removebg-preview.png" width="25px" >  </div></a> 
+          <a href="../AltaFidelidade/Atividades Pendentes.html"> <div class="selec"> <img src="../imagens/clock-removebg-preview.png" width="25px" > </div></a>
+          </div>
+    <div class="prof">
+    <img src="../imagens/194936.png" alt="prof" width="35" height="35">
+    </div>
+    <div class="topbar">;;;;;; Professora de Artes</div>
+    <div class="chat">
+      <div class="msg usuario">exemplo de mensagem</div>
+      <div class="msg eu">exemplo de mensagem</div>
+      <div class="msg usuario">exemplo de mensagem</div>
+      <div class="msg eu">exemplo de mensagem</div>
+    </div>
+    <div class="comp">
+      <input type="text" placeholder="Digite uma mensagem">
+      <button>➤</button>
+    </div>
+  </div>
+  
+</body>
+</html>
